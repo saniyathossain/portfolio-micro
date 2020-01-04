@@ -70,10 +70,6 @@ $app->singleton(
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
 
-// $app->middleware([
-//     JacobBennett\Http2ServerPush\Middleware\AddHttp2ServerPush::class
-// ]);
-
 /*
 |--------------------------------------------------------------------------
 | Register Service Providers
@@ -89,7 +85,6 @@ $app->singleton(
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 $app->register(Illuminate\Redis\RedisServiceProvider::class);
-
 $app->register(App\Http\Base\Providers\BaseServiceProvider::class);
 $app->register(App\Http\Base\Providers\ModulesServiceProvider::class);
 

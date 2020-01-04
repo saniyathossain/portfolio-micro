@@ -24,7 +24,6 @@
 						<ul>
 							<li class="active"><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="home">Home</a></li>
 							<li><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="about">About</a></li>
-							<li><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="services">Services</a></li>
 							<li><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="skills">Skills</a></li>
 							<li><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="education">Education</a></li>
 							<li><a href="{!! $BaseLibrary->hrefHash !!}" data-nav-section="experience">Experience</a></li>
@@ -48,43 +47,6 @@
 			</aside>
 
 			<div id="colorlib-main">
-				<section id="colorlib-hero" class="js-fullheight" data-section="home">
-					<div class="flexslider js-fullheight">
-						<ul class="slides">
-							<li>
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner js-fullheight">
-												<div class="desc">
-													<h1>I am <br>{!! $me->shortname ?? '' !!}</h1>
-													<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-                                                <h1>I am <br>a {{ $me->designation ?? '' }}</h1>
-													{{-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> --}}
-													{{-- <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p> --}}
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
 
 				<section class="colorlib-about" data-section="about">
 					<div class="colorlib-narrow-content">
@@ -123,94 +85,6 @@
 											<span class="icon2"><i class="icon-phone3"></i></span>
 											<h3>Application</h3>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-										<div class="hire">
-											<h2>I am happy to tell <br>that 15+ projects done successfully!</h2>
-											{{-- <a href="{!! $BaseLibrary->hrefHash !!}" class="btn-hire">Hire me</a> --}}
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="colorlib-services" data-section="services">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<span class="heading-meta">What I do?</span>
-								<h2 class="colorlib-heading">Here are some of my expertise</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="icon-bulb"></i>
-									</span>
-									<div class="desc">
-										<h3>Innovative Ideas</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Application</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="icon-layers2"></i>
-									</span>
-									<div class="desc">
-										<h3>Graphic Design</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Application</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
 									</div>
 								</div>
 							</div>
@@ -376,7 +250,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7 col-md-push-1">
+							{{-- <div class="col-md-7 col-md-push-1">
 								<div class="row">
 									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 										<form action="">
@@ -399,7 +273,7 @@
 									</div>
 
 								</div>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</section>

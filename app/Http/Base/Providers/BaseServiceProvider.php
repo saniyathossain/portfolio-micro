@@ -17,7 +17,8 @@ use App\Http\Base\Traits\ViewsTrait;
 */
 class BaseServiceProvider extends ServiceProvider
 {
-	use ModuleTrait, ViewsTrait;
+    use ModuleTrait,
+        ViewsTrait;
 
 	/**
 	 * Will make sure that the required modules have been fully loaded
@@ -26,7 +27,7 @@ class BaseServiceProvider extends ServiceProvider
 	 */
 	public function boot(): void
 	{
-		$this->bindServiceViewClass();
+		$this->bindServiceClass();
 		$this->shareViewStatic();
 		// $this->requireClass();
 	}
@@ -42,11 +43,11 @@ class BaseServiceProvider extends ServiceProvider
 	}
 
 	/**
-	 * bindServiceViewClass
+	 * bindServiceClass
 	 *
 	 * @return void
 	 */
-	private function bindServiceViewClass(): void
+	private function bindServiceClass(): void
 	{
 		// check if the directory exists
 		if (is_dir($this->baseDirectory())):
@@ -65,7 +66,7 @@ class BaseServiceProvider extends ServiceProvider
 					if (class_exists($class)):
 						$this->app->bind($className, $class);
 						// share the class to Laravel Views
-						view()->share($className, $this->app->make($class));
+						view()->share($className, app()->make($class));
 					endif;
 				endforeach;
 			endif;

@@ -21,7 +21,7 @@ trait ModuleTrait
 	 */
 	public function getModuleName(): string
 	{
-		return ucfirst(request()->segment(1));
+		return ucfirst(app('request')->segment(1));
 	}
 
 	/**

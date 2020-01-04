@@ -11,10 +11,11 @@ use Eloquent;
  */
 abstract class BaseModel extends Eloquent
 {
-	use EloquentTrait, BaseModelTrait
-	{
-		BaseModelTrait::__construct as protected __constructBaseModelTrait;
-	}
+    use EloquentTrait,
+        BaseModelTrait
+        {
+            BaseModelTrait::__construct as protected __constructBaseModelTrait;
+        }
 
 	/**
 	 * __construct
