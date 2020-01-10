@@ -4,17 +4,17 @@ namespace App\Http\Base\Models;
 
 use App\Http\Base\Traits\BaseModelTrait;
 use App\Http\Base\Traits\EloquentTrait;
-use Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * BaseModel class
  */
-abstract class BaseModel extends Eloquent
+abstract class BaseModel extends Model
 {
     use EloquentTrait,
         BaseModelTrait
         {
-            BaseModelTrait::__construct as protected __constructBaseModelTrait;
+            BaseModelTrait::__construct as private __constructBaseModelTrait;
         }
 
 	/**
